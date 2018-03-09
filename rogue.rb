@@ -21,8 +21,9 @@ while true
   puts "here's the board!"
   puts "Please enter a direction you'd like to move: u, d, l, r"
   direction = gets.chomp
-  puts "got direction #{direction}"
-  # ask the board to move the character that direction
-  # TODO: deal with invalid input
-  board.move_character("d")
+  if(direction == "d" || direction == "u" || direction == "l" || direction == "r")
+    board.move_character(direction)
+  else
+    puts "invalid input: #{direction}"
+  end
 end

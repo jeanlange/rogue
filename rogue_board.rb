@@ -39,12 +39,20 @@ class RogueBoard
   def move_character(direction)
     # find where the character currently is
     # find the new cell they should be in
+    new_character_row = @character_row
+    new_character_col = @character_col
     if direction == "d"
-      new_character_row = @character_row + 1
-      new_character_col = @character_col
+      new_character_row += 1
+    elsif direction == "u"
+      new_character_row -= 1
+    elsif direction == "r"
+      new_character_col += 1
+    elsif direction == "l"
+      new_character_col -= 1
     end
     # if it's valid, move them there (removing from the old one)
-    if new_character_row < @size
+    if new_character_row < @size && new_character_row >= 0 &&
+      new_character_col < @size && new_character_col >= 0
       @grid[@character_row][@character_col].remove_character
       @grid[new_character_row][new_character_col].place_character
       # update the character position
