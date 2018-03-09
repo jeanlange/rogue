@@ -1,3 +1,11 @@
+## What is, how to?
+We worked on building a roguelike where we print a board and there's a character that can move around on it.
+
+To run it, do `ruby rogue.rb`
+
+## Notes
+
+### To do
 ~game board - 2d grid
 ~character that can move in cardinal directions
 ~treasures
@@ -6,7 +14,7 @@ scrolling map
 some way to win
 status display
 
-
+### Design
 
 layering discussion: n-tier design
 * data (bank accounts or board & player position)
