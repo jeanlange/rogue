@@ -11,6 +11,13 @@ board = RogueBoard.new
 
 while true
   # iterate over each position in the board and print it
+  board.rows.each do |row|
+    row.each do |cell|
+      # print the cell
+      print cell
+    end
+    puts
+  end
   puts "here's the board!"
   puts "Please enter a direction you'd like to move: u, d, l, r"
   direction = gets.chomp
