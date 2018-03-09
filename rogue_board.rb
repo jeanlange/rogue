@@ -25,8 +25,8 @@ end
 
 class RogueBoard
   def initialize
-    size = 5
-    @grid = Array.new(size) { Array.new(size) {Cell.new}}
+    @size = 5
+    @grid = Array.new(@size) { Array.new(@size) {Cell.new}}
     @character_row = 0
     @character_col = 1
     @grid[@character_row][@character_col].place_character
@@ -44,7 +44,7 @@ class RogueBoard
       new_character_col = @character_col
     end
     # if it's valid, move them there (removing from the old one)
-    if true
+    if new_character_row < @size
       @grid[@character_row][@character_col].remove_character
       @grid[new_character_row][new_character_col].place_character
       # update the character position
