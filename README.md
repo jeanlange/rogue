@@ -6,13 +6,13 @@ To run it, do `ruby rogue.rb`
 ## Notes
 
 ### To do
-~game board - 2d grid
-~character that can move in cardinal directions
-~treasures
-obstacles
-scrolling map
-some way to win
-status display
+* ~game board - 2d grid
+* ~character that can move in cardinal directions
+* ~treasures
+* obstacles
+* scrolling map
+* some way to win
+* status display
 
 ### Design
 
