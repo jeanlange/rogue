@@ -21,7 +21,7 @@ class Board
     @size = size
     @grid = Array.new(@size) { Array.new(@size) {Cell.new}}
     # this should be random, because what if the size is smaller than these numbers?!
-    @grid[3][2].place_gold
+    @grid[rand(@size)][rand(@size)].place_gold
   end
 
   def cell_at(row, col)
