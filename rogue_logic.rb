@@ -1,4 +1,4 @@
- require './rogue_data.rb'
+require './rogue_data.rb'
 
 class RogueGame
   def initialize(size)

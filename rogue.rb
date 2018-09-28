@@ -23,9 +23,9 @@ while true
     puts
   end
 
-  puts "Please enter a direction you'd like to move: u, d, l, r"
+  puts "Please enter a direction you'd like to move: w, s, a, d"
   direction = gets.chomp
-  if(direction == "d" || direction == "u" || direction == "l" || direction == "r")
+  if(direction == "s" || direction == "w" || direction == "a" || direction == "d")
     game.move_character(direction)
   else
     puts "invalid input: #{direction}"
