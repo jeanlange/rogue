@@ -21,13 +21,13 @@ class RogueGame
     # is the player allowed to go there?
     new_character_row = @character.char_row
     new_character_col = @character.char_col
-    if direction == "d"
+    if direction == "s"
       new_character_row += 1
-    elsif direction == "u"
+    elsif direction == "w"
       new_character_row -= 1
-    elsif direction == "r"
+    elsif direction == "d"
       new_character_col += 1
-    elsif direction == "l"
+    elsif direction == "a"
       new_character_col -= 1
     end
     # if it's valid, 
