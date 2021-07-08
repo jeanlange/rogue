@@ -32,8 +32,8 @@ class RogueGame
     end
     # if it's valid, 
     # then update the player's position
-    if new_character_row < 5 && new_character_row >= 0 &&
-      new_character_col < 5 && new_character_col >= 0
+    if new_character_row < @size && new_character_row >= 0 &&
+      new_character_col < @size && new_character_col >= 0
       @character.move(new_character_row, new_character_col)
 
       # if that causes a board update, make it
