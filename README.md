@@ -3,6 +3,8 @@ We worked on building a roguelike game where we print a board and there's a char
 
 To run it, do `ruby rogue.rb`
 
+Works on Windows and Mac at least!
+
 ## Notes
 
 ### To do
